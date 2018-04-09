@@ -27,14 +27,34 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mShowInfo = findViewById(R.id.tv_show);
 
-        int[] nums = new int[]{2,7,11,15};
-        int target = 26;
-//        int[] ints = twoSum(nums, target);
-        int[] ints = twoSumA(nums, target);
+        //第一题：
+//        int[] nums = new int[]{2,7,11,15};
+//        int target = 26;
+////        int[] ints = twoSum(nums, target);
+//        int[] ints = twoSumA(nums, target);
+//
+//        if(ints != null){
+//            mShowInfo.setText("第一个数字下标是："+ints[0]+";第二个数字下标是："+ints[1]);
+//        }
 
-        if(ints != null){
-            mShowInfo.setText("第一个数字下标是："+ints[0]+";第二个数字下标是："+ints[1]);
+        //第二题：Add Two Numbers
+        AddTwoNumbers.ListNode first = new AddTwoNumbers.ListNode(2);
+        first.next = new AddTwoNumbers.ListNode(4);
+        first.next.next = new AddTwoNumbers.ListNode(3);
+
+        AddTwoNumbers.ListNode second = new AddTwoNumbers.ListNode(5);
+        second.next = new AddTwoNumbers.ListNode(6);
+        second.next.next = new AddTwoNumbers.ListNode(4);
+
+        StringBuffer stringBuffer = new StringBuffer();
+        AddTwoNumbers.ListNode listNode = AddTwoNumbers.addTwoNumbers(first, second);
+        AddTwoNumbers.ListNode temp = listNode;
+        while (temp != null){
+            stringBuffer.append(temp.val);
+            temp = temp.next;
         }
+
+        mShowInfo.setText(stringBuffer);
     }
 
     /*
