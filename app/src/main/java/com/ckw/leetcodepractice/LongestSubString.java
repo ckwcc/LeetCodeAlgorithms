@@ -40,6 +40,7 @@ public class LongestSubString {
                 tempLength = 1;
             }
 
+            //需要重置sb
             sb = new StringBuffer();
         }
         return maxLength;
