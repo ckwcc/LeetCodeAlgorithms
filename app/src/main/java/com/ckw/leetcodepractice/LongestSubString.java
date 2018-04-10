@@ -1,6 +1,5 @@
 package com.ckw.leetcodepractice;
 
-import android.util.Log;
 
 /**
  * Created by ckw
@@ -23,6 +22,7 @@ public class LongestSubString {
         int maxLength = 1;
         int tempLength = 1;
         StringBuffer sb = new StringBuffer();
+        //两层for，外层对所有的字符遍历，内存是除了外层之外的后续字符的循环
         for (int i = 0; i < chars.length; i++) {
             sb.append(chars[i]);
             for (int j = i+1; j < chars.length ; j++) {
