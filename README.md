@@ -10,3 +10,8 @@ LeetCode Algorithms算法题
   给定两个非空链表，表示两个非负整数。这些数字以相反的顺序存储，每个节点都包含一个数字。
   添加两个数字并将其作为一个链表返回。
   你可以假设这两个数字不包含任何前导零，除了数字0本身。
+  
+3.Longest Substring Without Repeating Characters
+  给定一个字符串，找出里面最长的连续的子串的长度
+  
+  
