@@ -6,18 +6,7 @@ import android.widget.TextView;
 
 import java.util.HashMap;
 import java.util.Map;
-/*
-* 算法第一题：Two Sum
-* Given an array of integers, return indices of the two numbers such that they add up to a specific target.
-* You may assume that each input would have exactly one solution, and you may not use the same element twice.
-* 问题描述：
-* 给一个int类型的数组，返回一个由其中 两个数字相加等于一个具体的值 的这两个数字的数组下标
-* 这里假设每个输入只有一种解决方案，同时这两个数字不能是由相同的元素组成
 
-* Given nums = [2, 7, 11, 15], target = 9,
-* Because nums[0] + nums[1] = 2 + 7 = 9,
-* return [0, 1].
-* */
 public class MainActivity extends AppCompatActivity {
 
     private TextView mShowInfo;
@@ -38,25 +27,41 @@ public class MainActivity extends AppCompatActivity {
 //        }
 
         //第二题：Add Two Numbers
-        AddTwoNumbers.ListNode first = new AddTwoNumbers.ListNode(2);
-        first.next = new AddTwoNumbers.ListNode(4);
-        first.next.next = new AddTwoNumbers.ListNode(3);
+//        AddTwoNumbers.ListNode first = new AddTwoNumbers.ListNode(2);
+//        first.next = new AddTwoNumbers.ListNode(4);
+//        first.next.next = new AddTwoNumbers.ListNode(3);
+//
+//        AddTwoNumbers.ListNode second = new AddTwoNumbers.ListNode(5);
+//        second.next = new AddTwoNumbers.ListNode(6);
+//        second.next.next = new AddTwoNumbers.ListNode(4);
+//
+//        StringBuffer stringBuffer = new StringBuffer();
+//        AddTwoNumbers.ListNode listNode = AddTwoNumbers.addTwoNumbers(first, second);
+//        AddTwoNumbers.ListNode temp = listNode;
+//        while (temp != null){
+//            stringBuffer.append(temp.val);
+//            temp = temp.next;
+//        }
+//
+//        mShowInfo.setText(stringBuffer);
 
-        AddTwoNumbers.ListNode second = new AddTwoNumbers.ListNode(5);
-        second.next = new AddTwoNumbers.ListNode(6);
-        second.next.next = new AddTwoNumbers.ListNode(4);
-
-        StringBuffer stringBuffer = new StringBuffer();
-        AddTwoNumbers.ListNode listNode = AddTwoNumbers.addTwoNumbers(first, second);
-        AddTwoNumbers.ListNode temp = listNode;
-        while (temp != null){
-            stringBuffer.append(temp.val);
-            temp = temp.next;
-        }
-
-        mShowInfo.setText(stringBuffer);
+        //第三题：Longest Substring Without Repeating Characters
+        int length = LongestSubString.lengthOfLongestSubstring("aaaaaaabbcdbbbb");
+        mShowInfo.setText("长度是："+length);
     }
 
+    /*
+     * 算法第一题：Two Sum
+     * Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+     * You may assume that each input would have exactly one solution, and you may not use the same element twice.
+     * 问题描述：
+     * 给一个int类型的数组，返回一个由其中 两个数字相加等于一个具体的值 的这两个数字的数组下标
+     * 这里假设每个输入只有一种解决方案，同时这两个数字不能是由相同的元素组成
+
+     * Given nums = [2, 7, 11, 15], target = 9,
+     * Because nums[0] + nums[1] = 2 + 7 = 9,
+     * return [0, 1].
+     * */
     /*
     * 方法一
     * 时间复杂度是O(n^2)
