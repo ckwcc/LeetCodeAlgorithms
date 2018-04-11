@@ -14,4 +14,7 @@ LeetCode Algorithms算法题
 3.Longest Substring Without Repeating Characters
   给定一个字符串，找出里面最长的连续的子串的长度
   
+4.Longest Palindromic Substring
+  找出最长的回文子串
+  
   
