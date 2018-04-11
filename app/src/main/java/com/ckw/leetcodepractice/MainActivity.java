@@ -16,38 +16,71 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mShowInfo = findViewById(R.id.tv_show);
 
-        //第一题：
-//        int[] nums = new int[]{2,7,11,15};
-//        int target = 26;
-////        int[] ints = twoSum(nums, target);
-//        int[] ints = twoSumA(nums, target);
-//
-//        if(ints != null){
-//            mShowInfo.setText("第一个数字下标是："+ints[0]+";第二个数字下标是："+ints[1]);
-//        }
+        //第一题：Two Sum
+        firstProblem();
 
         //第二题：Add Two Numbers
-//        AddTwoNumbers.ListNode first = new AddTwoNumbers.ListNode(2);
-//        first.next = new AddTwoNumbers.ListNode(4);
-//        first.next.next = new AddTwoNumbers.ListNode(3);
-//
-//        AddTwoNumbers.ListNode second = new AddTwoNumbers.ListNode(5);
-//        second.next = new AddTwoNumbers.ListNode(6);
-//        second.next.next = new AddTwoNumbers.ListNode(4);
-//
-//        StringBuffer stringBuffer = new StringBuffer();
-//        AddTwoNumbers.ListNode listNode = AddTwoNumbers.addTwoNumbers(first, second);
-//        AddTwoNumbers.ListNode temp = listNode;
-//        while (temp != null){
-//            stringBuffer.append(temp.val);
-//            temp = temp.next;
-//        }
-//
-//        mShowInfo.setText(stringBuffer);
+        secondProblem();
 
         //第三题：Longest Substring Without Repeating Characters
+        thirdProblem();
+
+        //第四题： Longest Palindromic Substring
+        fourthProblem();
+    }
+
+    /*
+    * 第一题测试用例
+    * */
+    private void firstProblem(){
+        int[] nums = new int[]{2,7,11,15};
+        int target = 26;
+//        int[] ints = twoSum(nums, target);
+        int[] ints = twoSumA(nums, target);
+
+        if(ints != null){
+            mShowInfo.setText("第一个数字下标是："+ints[0]+";第二个数字下标是："+ints[1]);
+        }
+    }
+
+    /*
+    * 第二题测试用例
+    * */
+    private void secondProblem(){
+        AddTwoNumbers.ListNode first = new AddTwoNumbers.ListNode(2);
+        first.next = new AddTwoNumbers.ListNode(4);
+        first.next.next = new AddTwoNumbers.ListNode(3);
+
+        AddTwoNumbers.ListNode second = new AddTwoNumbers.ListNode(5);
+        second.next = new AddTwoNumbers.ListNode(6);
+        second.next.next = new AddTwoNumbers.ListNode(4);
+
+        StringBuffer stringBuffer = new StringBuffer();
+        AddTwoNumbers.ListNode listNode = AddTwoNumbers.addTwoNumbers(first, second);
+        AddTwoNumbers.ListNode temp = listNode;
+        while (temp != null){
+            stringBuffer.append(temp.val);
+            temp = temp.next;
+        }
+
+        mShowInfo.setText(stringBuffer);
+    }
+
+
+    /*
+    * 第三题测试用例
+    * */
+    private void thirdProblem(){
         int length = LongestSubString.lengthOfLongestSubstring("aaaaaaabbcdbbbb");
         mShowInfo.setText("长度是："+length);
+    }
+
+    /*
+    * 第四题测试用例
+    * */
+    private void fourthProblem(){
+        String s = Palindromic.longestPalindrome("abcdccba");
+        mShowInfo.setText(s);
     }
 
     /*
