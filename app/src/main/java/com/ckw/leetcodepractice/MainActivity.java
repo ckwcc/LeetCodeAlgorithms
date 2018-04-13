@@ -29,7 +29,19 @@ public class MainActivity extends AppCompatActivity {
 //        fourthProblem();
 
         //第五题： Median of Two Sorted Arrays (比较难)
-        fifthProblem();
+//        fifthProblem();
+
+        //第六题：ReverseInteger
+        sixthProblem();
+    }
+
+    /*
+    * 第六题测试用例
+    * */
+    private void sixthProblem() {
+        int x = -2147483648;
+        int reverse = ReverseInteger.reverse(x);
+        mShowInfo.setText("原来="+x+"；翻转后="+String.valueOf(reverse));
     }
 
     /*
