@@ -19,7 +19,9 @@ LeetCode Algorithms算法题
   
 5.MedianofTwoSortedArrays（难）
   找出两个数组的所有元素的中间值
-  
+
+6.ReverseInteger
+    将一个Int数翻转按规则输出
   
   
   
