@@ -17,16 +17,19 @@ public class MainActivity extends AppCompatActivity {
         mShowInfo = findViewById(R.id.tv_show);
 
         //第一题：Two Sum
-        firstProblem();
+//        firstProblem();
 
         //第二题：Add Two Numbers
-        secondProblem();
+//        secondProblem();
 
         //第三题：Longest Substring Without Repeating Characters
-        thirdProblem();
+//        thirdProblem();
 
         //第四题： Longest Palindromic Substring
-        fourthProblem();
+//        fourthProblem();
+
+        //第五题： Median of Two Sorted Arrays (比较难)
+        fifthProblem();
     }
 
     /*
@@ -83,6 +86,15 @@ public class MainActivity extends AppCompatActivity {
         mShowInfo.setText(s);
     }
 
+    /*
+    * 第五题测试用例
+    * */
+    private void fifthProblem(){
+        int[] b = new int[]{1,2,3,4,100};
+        int[] a = new int[]{6,7,8};
+        double median = MedianofTwoSortedArrays.findMedianSortedArrays(a, b);
+        mShowInfo.setText("中间数是："+median);
+    }
     /*
      * 算法第一题：Two Sum
      * Given an array of integers, return indices of the two numbers such that they add up to a specific target.
