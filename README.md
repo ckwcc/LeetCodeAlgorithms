@@ -22,6 +22,9 @@ LeetCode Algorithms算法题
 
 6.ReverseInteger
     将一个Int数翻转按规则输出
+
+7.PalindromeNumber
+    判断一个int类型的数是否是类似于回文数，不能用string的方法
   
   
   

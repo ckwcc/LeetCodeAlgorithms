@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,7 +33,19 @@ public class MainActivity extends AppCompatActivity {
 //        fifthProblem();
 
         //第六题：ReverseInteger
-        sixthProblem();
+//        sixthProblem();
+        //第七题：PalindromeNumber
+        seventhProblem();
+
+    }
+
+    /*
+    * 第七题测试用例
+    * */
+    private void seventhProblem(){
+        int x = 10;
+        boolean palindrome = PalindromeNumber.isPalindrome(x);
+        mShowInfo.setText("是否是PalindromeNumber："+palindrome);
     }
 
     /*
